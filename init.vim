@@ -113,4 +113,3 @@ let g:NERDToggleCheckAllLines = 1
 
 set ignorecase
 set updatetime=300
-" g:coc_config_home
