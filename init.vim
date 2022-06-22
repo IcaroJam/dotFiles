@@ -56,7 +56,6 @@ set t_co=256
 set fileformat=unix
 set encoding=utf-8
 set fileencoding=utf-8
-" set guifont=mononoki\ Nerd\ Font\ Mono
 let g:webdevicons_enable_nerdtree = 1
 
 set smartcase
@@ -72,6 +71,8 @@ set nofoldenable
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+set colorcolumn=80
 
 let mapleader = " "
 
