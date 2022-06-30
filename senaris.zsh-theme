@@ -17,7 +17,7 @@ GIT_PROMPT_INFO=$FG[148]
 
 a="%{$reset_color%}"
 
-PROMPT='%{$FG[220]%}[$a%{$USER_NAME_COLOR%}%n$a %{$AT_COLOR%}@$a %{$MACHINE_NAME_COLOR%}%m$a%{$FG[220]%}]$a%{$PROMPT_SUCCESS_COLOR%}%c%{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status)%{$PROMPT_PROMPT%} ᐅ$a '
+PROMPT='%{$FG[220]%}[$a%{$USER_NAME_COLOR%}%n$a %{$AT_COLOR%}@$a %{$MACHINE_NAME_COLOR%}%m$a%{$FG[220]%}]$a%{$PROMPT_SUCCESS_COLOR%}%c%{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status)%{$PROMPT_PROMPT%} >>$a '
 
 RPROMPT='%{$FG[172]%}%*$a %{$FG[039]%}[%~]$a'
 
