@@ -17,7 +17,7 @@ GIT_PROMPT_INFO=$FG[148]
 
 a="%{$reset_color%}"
 
-PROMPT='%{$FG[220]%}[$a%{$USER_NAME_COLOR%}%n$a %{$AT_COLOR%}@$a %{$MACHINE_NAME_COLOR%}%m$a%{$FG[220]%}]$a%{$PROMPT_SUCCESS_COLOR%}%c %{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$PROMPT_PROMPT%}ᐅ$a '
+PROMPT='%{$FG[220]%}[$a%{$USER_NAME_COLOR%}%n$a %{$AT_COLOR%}@$a %{$MACHINE_NAME_COLOR%}%m$a%{$FG[220]%}]$a%{$PROMPT_SUCCESS_COLOR%}%c%{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status)%{$PROMPT_PROMPT%} ᐅ$a '
 
 RPROMPT='%{$FG[172]%}%*$a %{$FG[039]%}[%~]$a'
 
@@ -26,12 +26,12 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GIT_PROMPT_INFO%} :"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$GIT_DIRTY_COLOR%}✘"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$GIT_CLEAN_COLOR%}✔"
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[103]%}✚%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[103]%}✹%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[103]%}✖%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[103]%}➜%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[103]%}═%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[103]%}✭%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[103]%}ADD%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[103]%}MOD%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[103]%}DEL%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[103]%}REN%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[103]%}UNM%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[103]%}UNT%{$reset_color%}"
 
 ############
 
