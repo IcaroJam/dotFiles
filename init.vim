@@ -76,16 +76,27 @@ set colorcolumn=80
 
 let mapleader = " "
 
-nmap <Tab> >>
-imap <S-Tab> <Esc><<i
-nmap <S-tab> <<
+"nnoremap <Tab> >>
+"nnoremap <S-Tab> <<
 
 imap <S-Left> <Esc>bi
 nmap <S-Left> b
 imap <S-Right> <Esc><Right>ei
 nmap <S-Right> e
 
-" Create default mappings
+" Buffer navigation
+nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
+"Vertical tab
+nnoremap √ :vnew<CR>
+"Newscreen tab
+nnoremap ß :enew<CR>
+"Horizontal tab
+nnoremap ™ :new<CR>
+"Close tab
+nnoremap © :bdelete<CR>
+
+"Create default mappings
 let g:NERDCreateDefaultMappings = 1
 
 " Add spaces after comment delimiters by default
