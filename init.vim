@@ -87,13 +87,13 @@ nmap <S-Right> e
 " Buffer navigation
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
-"Vertical tab
+"Vertical tab (ALT+v)
 nnoremap √ :vnew<CR>
-"Newscreen tab
+"Newscreen tab (ALT+b)
 nnoremap ß :enew<CR>
-"Horizontal tab
+"Horizontal tab (ALT+h)
 nnoremap ™ :new<CR>
-"Close tab
+"Close tab (ALT+c)
 nnoremap © :bdelete<CR>
 
 "Create default mappings
