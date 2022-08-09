@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
-Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdcommenter'
 Plug 'Yggdroot/indentLine'
@@ -99,7 +98,13 @@ let g:NERDToggleCheckAllLines = 1
 
 
 " CoC config
+
+" Complete on enter
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" Cycle through completion list with tab
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
 set ignorecase
 set updatetime=300
