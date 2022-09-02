@@ -22,7 +22,6 @@ call plug#end()
 
 syntax on
 colorscheme gruvbox
-filetype on
 filetype plugin indent on
 set list lcs=tab:\|\ 
 
