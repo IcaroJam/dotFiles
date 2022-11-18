@@ -1,10 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/everforest'
 Plug 'itchyny/lightline.vim'
 
 Plug 'jiangmiao/auto-pairs'
-Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdcommenter'
 Plug 'Yggdroot/indentLine'
 
@@ -21,7 +21,9 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 syntax on
-colorscheme gruvbox
+let g:everforest_background='medium'
+let g:lightline = {'colorscheme' : 'everforest'}
+colorscheme everforest
 filetype on
 filetype plugin indent on
 set list lcs=tab:\|\ 
