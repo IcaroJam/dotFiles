@@ -24,14 +24,15 @@ syntax on
 let g:everforest_background='medium'
 let g:lightline = {'colorscheme' : 'everforest'}
 colorscheme everforest
-filetype on
 filetype plugin indent on
+
+" Displays | where tabs are.
 set list lcs=tab:\|\ 
 
 let g:mail42 = 'ntamayo-@student.42malaga.com'
-set number
-set wrap
-set t_co=256
+set number " Displays numbers on the left column.
+set wrap " Lines wrap around the screen.
+set t_co=256 " Set the terminal to 256 colour mode.
 
 set fileformat=unix
 set encoding=utf-8
@@ -40,7 +41,7 @@ let g:webdevicons_enable_nerdtree = 1
 
 set smartcase
 set smartindent
-set cursorline
+set cursorline " Highlight the current line.
 set visualbell
 set mouse=a
 set title
