@@ -28,6 +28,8 @@ let g:gruvbox_material_background = 'medium'
 let g:gruvbox_material_foreground = 'mix'
 let g:lightline = {'colorscheme' : 'gruvbox_material'}
 colorscheme gruvbox-material
+" let g:lightline = {'colorscheme' : 'everforest'}
+" colorscheme everforest
 filetype plugin indent on
 
 " Displays | where tabs are.
