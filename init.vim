@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 Plug 'sainnhe/everforest'
 Plug 'itchyny/lightline.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
@@ -23,9 +24,10 @@ call plug#end()
 syntax on
 set background=dark
 let g:everforest_background = 'hard'
-let g:gruvbox_background = 'soft'
-let g:lightline = {'colorscheme' : 'everforest'}
-colorscheme everforest
+let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_foreground = 'mix'
+let g:lightline = {'colorscheme' : 'gruvbox_material'}
+colorscheme gruvbox-material
 filetype plugin indent on
 
 " Displays | where tabs are.
