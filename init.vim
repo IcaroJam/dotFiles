@@ -1,5 +1,5 @@
 " Load Plugins and their Configs
-source ~/.config/nvim/plugins.vim
+	source ~/.config/nvim/plugins.vim
 
 " Appearance
 	set background=dark
@@ -30,38 +30,38 @@ source ~/.config/nvim/plugins.vim
 	filetype plugin indent on
 
 " Search
-set ignorecase
-set smartcase " Disable ignore case when searching with upper
+	set ignorecase
+	set smartcase " Disable ignore case when searching with upper
 
 " Encoding
-set fileformat=unix
-set encoding=utf-8
-set fileencoding=utf-8
+	set fileformat=unix
+	set encoding=utf-8
+	set fileencoding=utf-8
 
 " Tabs and Indentation
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+	set smartindent
+	set tabstop=4
+	set shiftwidth=4
+	set softtabstop=4
 
 " Mapping
-let mapleader=" "
-source ~/.config/nvim/mappings.vim " Load key-maps from a dedicated file
+	let mapleader=" "
+	source ~/.config/nvim/mappings.vim " Load key-maps from a dedicated file
 
 " Tabs and Buffers
-set splitbelow splitright
+	set splitbelow splitright
 
 " Clipboard and Mouse
-set clipboard+=unnamed " Enable system clipboard (requires xclip for x11 linux
-set mouse=a
+	set clipboard+=unnamed " Enable system clipboard (requires xclip for x11 linux
+	set mouse=a
 
 " Completion
-set wildmenu " Command mode tab completion
-set completeopt=noinsert,menuone,noselect
+	set wildmenu " Command mode tab completion
+	set completeopt=noinsert,menuone,noselect
 
 " 42 School mail for cursus projects
-let g:mail42 = 'ntamayo-@student.42malaga.com'
-"
+	let g:mail42 = 'ntamayo-@student.42malaga.com'
+
 " " Buffer navigation
 " nnoremap <Tab> :bn<CR>
 " nnoremap <S-Tab> :bp<CR>
