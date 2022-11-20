@@ -17,6 +17,9 @@ call plug#begin('~/.vim/plugged')
 	"Plug 'jiangmiao/auto-pairs' " Vim flavour
 	Plug 'windwp/nvim-autopairs' " Nvim flavour
 
+" Surrounding
+	Plug 'machakann/vim-sandwich'
+
 " The nerdiest of plants
 	Plug 'scrooloose/nerdtree'
 
