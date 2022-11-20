@@ -1,24 +1,33 @@
 " Load Plugins and their Configs
-source ~/.config/dotFiles/plugins.vim
+source ~/.config/nvim/plugins.vim
 
 " Appearance
-set background=dark
-set termguicolors " Set true color display
-let g:everforest_background = 'hard'
-let g:gruvbox_material_background = 'medium'
-let g:gruvbox_material_foreground = 'mix'
-let g:lightline = {'colorscheme' : 'gruvbox_material'}
-colorscheme gruvbox-material
+	set background=dark
+	set termguicolors " Set true color display
+	let g:everforest_background = 'hard'
+	let g:gruvbox_material_background = 'medium'
+	let g:gruvbox_material_foreground = 'mix'
 
-set number
-syntax on
-set cursorline " Highlight current line
-set colorcolumn=80
+	" Single variable theme selection (woo vimscript babyyy)
+		let THEME="gr" " Choose 'ev' for everforest or 'gr' for gruvbox
 
-set title
-set list lcs=tab:\|\ 
+		if  THEME == "ev"
+			let g:lightline = {'colorscheme' : 'everforest'}
+			colorscheme everforest
+		elseif THEME == "gr"
+			let g:lightline = {'colorscheme' : 'gruvbox_material'}
+			colorscheme gruvbox-material
+		endif
 
-filetype plugin indent on
+	set number
+	syntax on
+	set cursorline " Highlight current line
+	set colorcolumn=80
+
+	set title
+	set list lcs=tab:\|\ 
+
+	filetype plugin indent on
 
 " Search
 set ignorecase
@@ -37,6 +46,7 @@ set softtabstop=4
 
 " Mapping
 let mapleader=" "
+source ~/.config/nvim/mappings.vim " Load key-maps from a dedicated file
 
 " Tabs and Buffers
 set splitbelow splitright
@@ -51,11 +61,6 @@ set completeopt=noinsert,menuone,noselect
 
 " 42 School mail for cursus projects
 let g:mail42 = 'ntamayo-@student.42malaga.com'
-
-" imap <S-Left> <Esc>bi
-" nmap <S-Left> b
-" imap <S-Right> <Esc><Right>ei
-" nmap <S-Right> e
 "
 " " Buffer navigation
 " nnoremap <Tab> :bn<CR>
