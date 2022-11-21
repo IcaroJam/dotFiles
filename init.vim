@@ -52,7 +52,9 @@
 	set splitbelow splitright
 
 " Clipboard and Mouse
-	set clipboard+=unnamed " Enable system clipboard (requires xclip for x11 linux
+	if !has('macunix') " The unnamed thing doesn't seem to work in macos
+		set clipboard+=unnamed " Enable system clipboard (requires xclip for x11 linux)
+	endif
 	set mouse=a
 
 " Completion
