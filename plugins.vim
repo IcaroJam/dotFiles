@@ -56,7 +56,7 @@ lua << EOF
 	require'nvim-autopairs'.setup {}
 EOF
 
-" Idk man some nerdtree shit I copied from somewhere
+" Idk man some nerdcommenter shit I copied from somewhere
 	let g:NERDCreateDefaultMappings=1 " Create default mappings
 	let g:NERDSpaceDelims=1 " Add spaces after comment delimiters by default
 	let g:NERDCompactSexyComs=1 " Use compact syntax for prettified multi-line comments
