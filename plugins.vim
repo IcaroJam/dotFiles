@@ -14,8 +14,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'preservim/nerdcommenter'
 
 " Autopairing
-	"Plug 'jiangmiao/auto-pairs' " Vim flavour
-	Plug 'windwp/nvim-autopairs' " Nvim flavour
+	Plug 'jiangmiao/auto-pairs' " Vim flavour
+	" Plug 'windwp/nvim-autopairs' " Nvim flavour (indenting broken, switched
+	" back to the vim counterpart)
 
 " Surrounding
 	Plug 'machakann/vim-sandwich'
@@ -48,13 +49,17 @@ lua << EOF
 	  highlight = {
 		enable = true,
 	  },
+
+	  indent = {
+		enable = true,
+	  },
 	}
 EOF
 
 " Nvim Autopairing
-lua << EOF
-	require'nvim-autopairs'.setup {}
-EOF
+" lua << EOF
+"     require'nvim-autopairs'.setup {}
+" EOF
 
 " Idk man some nerdcommenter shit I copied from somewhere
 	let g:NERDCreateDefaultMappings=1 " Create default mappings
