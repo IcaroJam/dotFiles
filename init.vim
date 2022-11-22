@@ -4,17 +4,17 @@
 " Appearance
 	set background=dark
 	set termguicolors " Set true color display
-	let g:everforest_background = 'hard'
-	let g:gruvbox_material_background = 'medium'
-	let g:gruvbox_material_foreground = 'mix'
 
 	" Single variable theme selection (woo vimscript babyyy)
 		let THEME="gr" " Choose 'ev' for everforest or 'gr' for gruvbox
 
 		if  THEME == "ev"
+			let g:everforest_background = 'hard'
 			let g:lightline = {'colorscheme' : 'everforest'}
 			colorscheme everforest
 		elseif THEME == "gr"
+			let g:gruvbox_material_background = 'medium'
+			let g:gruvbox_material_foreground = 'mix'
 			let g:lightline = {'colorscheme' : 'gruvbox_material'}
 			colorscheme gruvbox-material
 		endif
