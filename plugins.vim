@@ -13,6 +13,9 @@ call plug#begin('~/.vim/plugged')
 " Sexy commenting
 	Plug 'preservim/nerdcommenter'
 
+" Doxygenation
+	Plug 'vim-scripts/DoxygenToolkit.vim'
+
 " Autopairing
 	Plug 'jiangmiao/auto-pairs' " Vim flavour
 	" Plug 'windwp/nvim-autopairs' " Nvim flavour (indenting broken, switched
@@ -87,10 +90,3 @@ EOF
 
 " Highlight the symbol and its references when holding the cursor.
 	autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Complete on enter
-	inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-
-" Cycle through completion list with tab
-	inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-	inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
