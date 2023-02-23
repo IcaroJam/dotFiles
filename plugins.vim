@@ -17,9 +17,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " Autopairing
-	Plug 'jiangmiao/auto-pairs' " Vim flavour
-	" Plug 'windwp/nvim-autopairs' " Nvim flavour (indenting broken, switched
-	" back to the vim counterpart)
+	" Vim flavour
+	Plug 'jiangmiao/auto-pairs'
+	" Nvim flavour (indenting broken, switched back to the vim counterpart)
+	" Plug 'windwp/nvim-autopairs'
 
 " Surrounding
 	Plug 'machakann/vim-sandwich'
