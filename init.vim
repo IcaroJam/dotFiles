@@ -39,10 +39,11 @@
 	set fileencoding=utf-8
 
 " Tabs and Indentation
-	set smartindent
-	set tabstop=4
-	set shiftwidth=4
-	set softtabstop=4
+	set autoindent
+	set smartindent " Indent lines automatically to match previous line and such
+	set tabstop=4 " Number of spaces per tab
+	set shiftwidth=4 " Changes behaviour of '<<' '>>' and '=='
+	set softtabstop=4 " Changes behaviour of TAB and BS
 
 " Mapping
 	let mapleader=" "
