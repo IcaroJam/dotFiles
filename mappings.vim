@@ -9,6 +9,9 @@
 " Doxygen
 	nmap <leader>d :Dox<CR>
 
+" NERDTree
+	nmap <leader>t :NERDTreeToggle<CR>
+
 " CoC
 	" Complete on enter
 		inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
