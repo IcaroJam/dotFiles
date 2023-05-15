@@ -1,10 +1,13 @@
-" Movement
+" Shifted movement and editing
 	imap <S-Left> <Esc>bi
 	nmap <S-Left> b
 	imap <S-Right> <Esc>ea
 	nmap <S-Right> e
 	imap <S-BS> <Esc>vbdi
 	nmap <S-BS> vbd
+
+" Window movement
+	nmap <leader>w <C-w>w
 
 " Doxygen
 	nmap <leader>d :Dox<CR>
