@@ -56,7 +56,7 @@
 	if !has('macunix') " The unnamed thing doesn't seem to work in macos
 		set clipboard+=unnamed " Enable system clipboard (requires xclip for x11 linux)
 	endif
-	set mouse=a
+	set mouse=nvi
 
 " Completion
 	set wildmenu " Command mode tab completion

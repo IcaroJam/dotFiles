@@ -22,3 +22,6 @@
 	" Cycle through completion list with tab
 		inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 		inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+	" Go to definition (Ctl-o to go back)
+		nmap <silent> gd <Plug>(coc-definition)
