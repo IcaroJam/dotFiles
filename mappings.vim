@@ -15,6 +15,14 @@
 " NERDTree
 	nmap <leader>t :NERDTreeToggle<CR>
 
+" Replace and global replace functions
+	function! Rep()
+		let replacee = input("Replace: ")
+		let replacement = input("With: ")
+		execute "%s/" . replacee . "/" . replacement . "/g"
+	endfunction
+	nmap <leader>r :call Rep()<CR>
+
 " CoC
 	" Complete on enter
 		inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
