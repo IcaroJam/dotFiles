@@ -1,6 +1,6 @@
 {
 	"colors.enable": true,
-		"suggest.labelMaxLength": 50,
+	"suggest.labelMaxLength": 50,
 	"suggest.snippetIndicator": " \ue796",
 	"suggest.timeout": 5000,
 	"suggest.triggerCompletionWait": 30,
