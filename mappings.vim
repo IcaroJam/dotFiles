@@ -13,6 +13,9 @@
 " Window movement
 	nmap <leader>w <C-w>w
 
+" Quickly get rid of search highlighting
+	nmap <leader>n :noh<CR>
+
 " Delete highlighted stuff into void instead of overwriting the register
 	xmap <leader>p "_dP
 

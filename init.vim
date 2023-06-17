@@ -32,6 +32,7 @@
 " Search
 	set ignorecase
 	set smartcase " Disable ignore case when searching with upper
+	set incsearch " Enable incremental search
 
 " Encoding
 	set fileformat=unix
