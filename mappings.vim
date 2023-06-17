@@ -6,6 +6,10 @@
 	imap <S-BS> <Esc>vbdi
 	nmap <S-BS> vbd
 
+" Move lines up and down
+	vmap J :m '>+1<CR>gv=gv
+	vmap K :m '<-2<CR>gv=gv
+
 " Window movement
 	nmap <leader>w <C-w>w
 
