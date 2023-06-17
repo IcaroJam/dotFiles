@@ -13,6 +13,17 @@
 " Window movement
 	nmap <leader>w <C-w>w
 
+" Delete highlighted stuff into void instead of overwriting the register
+	xmap <leader>p "_dP
+
+" Copy paste and delete into and from system clipboard
+	nmap <leader>y "+y
+	vmap <leader>y "+y
+	nmap <leader>p "+p
+	vmap <leader>p "+p
+	nmap <leader>d "_d
+	vmap <leader>d "_d
+
 " Doxygen
 	nmap <leader>d :Dox<CR>
 
