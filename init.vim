@@ -21,6 +21,7 @@
 
 	set number
 	syntax on
+	set linebreak
 	set cursorline " Highlight current line
 	set colorcolumn=80
 
