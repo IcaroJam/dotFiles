@@ -23,6 +23,7 @@
 	syntax on
 	set linebreak
 	set cursorline " Highlight current line
+	set scrolloff=5
 	set colorcolumn=80
 
 	set title
