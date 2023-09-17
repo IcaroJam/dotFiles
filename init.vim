@@ -23,7 +23,7 @@
 	syntax on
 	set linebreak
 	set cursorline " Highlight current line
-	set scrolloff=5
+	set scrolloff=5 " Min num of lines to display above and bellow cursor
 	set colorcolumn=80
 
 	set title
