@@ -7,6 +7,8 @@ call plug#begin('~/.vim/plugged')
 " Colourfuller syntax highlighting
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" Indent tabs for the future lua nvim-only config: lukas-reineke/indent-blankline.nvim
+
 " Navline
 	Plug 'itchyny/lightline.vim'
 
@@ -19,7 +21,9 @@ call plug#begin('~/.vim/plugged')
 " Autopairing
 	" Vim flavour
 	Plug 'jiangmiao/auto-pairs'
-	" Nvim flavour (indenting broken, switched back to the vim counterpart)
+	" Nvim flavour (indenting broken, switched back to the vim counterpart.
+	" This needs further configuration apparently. Again, when the lua config
+	" is done it'll come in handy.)
 	" Plug 'windwp/nvim-autopairs'
 
 " Surrounding
@@ -27,6 +31,7 @@ call plug#begin('~/.vim/plugged')
 
 " The nerdiest of plants
 	Plug 'scrooloose/nerdtree'
+	" For the future: nvim-neo-tree/neo-tree.nvim
 
 " Autocompletion!
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -36,6 +41,7 @@ call plug#begin('~/.vim/plugged')
 
 " Icons icons icons!
 	Plug 'ryanoasis/vim-devicons'
+	" For the future! (Dreaded configuration required, as per ush) nvim-tree/nvim-web-devicons
 
 call plug#end()
 
