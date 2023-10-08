@@ -13,6 +13,10 @@
 " Window movement
 	nmap <leader>w <C-w>w
 
+" Tab movement
+	nmap <Tab> gt
+	nmap <S-Tab> gT
+
 " Quickly get rid of search highlighting
 	nmap <leader>n :noh<CR>
 
