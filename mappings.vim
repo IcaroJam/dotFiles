@@ -16,19 +16,27 @@
 " Quickly get rid of search highlighting
 	nmap <leader>n :noh<CR>
 
+" Keep searching occurences in the middle of the screen
+	nmap n nzzzv
+	nmap N Nzzzv
+
 " Delete highlighted stuff into void instead of overwriting the register
 	xmap <leader>p "_dP
 
-" Copy paste and delete into and from system clipboard
+" Copy and paste into and from system clipboard
 	nmap <leader>y "+y
 	vmap <leader>y "+y
 	nmap <leader>p "+p
-	vmap <leader>p "+p
+
+" Delete into the void register
 	nmap <leader>d "_d
 	vmap <leader>d "_d
 
+" Replace word under cursor
+	nmap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
+
 " Doxygen
-	nmap <leader>d :Dox<CR>
+	nmap <leader>dx :Dox<CR>
 
 " NERDTree
 	nmap <leader>t :NERDTreeToggle<CR>
