@@ -27,7 +27,7 @@
 	set colorcolumn=80
 
 	set title
-	set list lcs=tab:\|\ 
+	set list lcs=tab:\|\ ,trail:•
 
 	filetype plugin indent on
 
