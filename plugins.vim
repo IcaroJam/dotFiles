@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Themes
 	Plug 'sainnhe/gruvbox-material'
 	Plug 'sainnhe/everforest'
+	Plug 'savq/melange-nvim'
 
 " Colourfuller syntax highlighting
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
