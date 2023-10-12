@@ -6,7 +6,12 @@
 	set termguicolors " Set true color display
 
 	" Single variable theme selection (woo vimscript babyyy)
-		let THEME="mel" " Choose 'ev' for everforest, 'gr' for gruvbox or 'mel' for melange
+		let THEME="rom"
+		" 'ev' for everforest
+		" 'gr' for gruvbox
+		" 'ros' for rosepine
+		" 'rom' for rosepine_moon
+		" 'mel' for melange
 
 		if  THEME == "ev"
 			let g:everforest_background = 'hard'
@@ -17,6 +22,12 @@
 			let g:gruvbox_material_foreground = 'mix'
 			let g:lightline = {'colorscheme' : 'gruvbox_material'}
 			colorscheme gruvbox-material
+		elseif THEME == "ros"
+			let g:lightline = {'colorscheme' : 'rosepine'}
+			colorscheme rose-pine
+		elseif THEME == "rom"
+			let g:lightline = {'colorscheme' : 'rosepine_moon'}
+			colorscheme rose-pine-moon
 		elseif THEME == "mel"
 			let g:lightline = {'colorscheme' : 'rosepine'}
 			colorscheme melange

@@ -4,6 +4,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'sainnhe/gruvbox-material'
 	Plug 'sainnhe/everforest'
 	Plug 'savq/melange-nvim'
+	Plug 'rose-pine/neovim'
+	Plug 'rose-pine/vim' " The theme itself seems broken if used on it's own, but it is required in order to have the rosepine_moon in the lightline
 
 " Colourfuller syntax highlighting
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
