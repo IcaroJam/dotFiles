@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Themes
 	Plug 'sainnhe/gruvbox-material'
 	Plug 'sainnhe/everforest'
+	Plug 'sainnhe/sonokai'
 	Plug 'savq/melange-nvim'
 	Plug 'rose-pine/neovim'
 	Plug 'rose-pine/vim' " The theme itself seems broken if used on it's own, but it is required in order to have the rosepine_moon in the lightline
