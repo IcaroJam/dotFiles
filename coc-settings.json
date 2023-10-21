@@ -60,5 +60,6 @@
 	"clangd.arguments": ["--clang-tidy", "--completion-style=detailed", "--fallback-style=google", "--header-insertion=never", "--suggest-missing-includes"],
 
 	// html stuff:
-	"html.autoClosingTags": true
+  "html.autoClosingTags": true,
+  "svelte.enable-ts-plugin": true
 }
