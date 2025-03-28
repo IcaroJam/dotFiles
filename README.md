@@ -11,3 +11,7 @@ Then set it as active with:
 
 And finally reload your intramfs:
 > sudo update-initramfs -u
+
+## Cinnamon
+#### Smol tweaks:
+- Change the grouped window list applet spacing: `/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/appGroup.js` line 263.
