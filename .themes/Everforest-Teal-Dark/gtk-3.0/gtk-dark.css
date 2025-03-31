@@ -60,7 +60,7 @@ entry selection, label selection, textview text selection:focus, textview text s
 
 treeview.view:selected, .view:selected {
   color: rgba(39, 46, 51, 0.87);
-  background-color: #f2efdf;
+  background-color: #83c092;
 }
 
 .linked:not(.vertical) > button, .linked:not(.vertical) > spinbutton.vertical, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry {
@@ -159,6 +159,7 @@ treeview.view:selected, .view:selected {
 }
 
 .view:selected:hover {
+  color: initial;
   box-shadow: none;
 }
 
@@ -1159,11 +1160,12 @@ toolbar {
   background-color: #272e33;
 }
 
-toolbar .linked
-> button:not(:hover):not(:active):not(:checked):not(:focus):not(
-:disabled
-) {
-  background-color: alpha(currentColor, 0.05);
+stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):not(:first-child):not(:last-child) {
+  margin: 0 4px 0 4px;
+}
+
+stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action):last-child {
+  margin: 0 0 0 4px;
 }
 
 .osd toolbar {
@@ -3990,18 +3992,17 @@ infobar.error:hover > revealer > box {
  * Tooltips *
  ************/
 tooltip {
-  box-shadow: none;
+  box-shadow: 0 0 4px rgba(131, 192, 146, 0.5);
 }
 
 tooltip.background {
-  background-color: rgba(32, 38, 42, 0.9);
+  background-color: #232a2e;
   color: #fffbef;
-  border-radius: 12px;
+  border-radius: 9999px;
 }
 
 tooltip.background.csd {
-  border-radius: 12px;
-  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
 }
 
 tooltip decoration {
@@ -4190,8 +4191,7 @@ decoration:backdrop {
 }
 
 tooltip.csd decoration {
-  border-radius: 12px;
-  box-shadow: none;
+  border-radius: 9999px;
   border: none;
 }
 
@@ -8420,9 +8420,9 @@ menubar.-vala-panel-background > menuitem:disabled {
 /* widgets main borders color on backdrop windows */
 @define-color unfocused_borders rgba(255, 251, 239, 0.12);
 /* these are pretty self explicative */
-@define-color warning_color #dfa000;
-@define-color error_color #f85552;
-@define-color success_color #8da101;
+@define-color warning_color #e69875;
+@define-color error_color #e67e80;
+@define-color success_color #83c092;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_focused_title #fffbef;

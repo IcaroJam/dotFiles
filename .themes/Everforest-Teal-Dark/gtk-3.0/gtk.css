@@ -8420,9 +8420,9 @@ menubar.-vala-panel-background > menuitem:disabled {
 /* widgets main borders color on backdrop windows */
 @define-color unfocused_borders rgba(255, 251, 239, 0.12);
 /* these are pretty self explicative */
-@define-color warning_color #dfa000;
-@define-color error_color #f85552;
-@define-color success_color #8da101;
+@define-color warning_color #e69875;
+@define-color error_color #e67e80;
+@define-color success_color #83c092;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_focused_title #fffbef;
