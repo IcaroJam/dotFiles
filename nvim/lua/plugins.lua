@@ -26,6 +26,8 @@ require "paq" {
 	{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
 	{ "nvim-telescope/telescope.nvim", tag = "0.1.8" },
 
+	{ "neoclide/coc.nvim", branch = "release" },
+
 }
 
 -- Lualine
@@ -80,3 +82,15 @@ require("nvim-surround").setup()
 
 -- NerdTree
 require("nvim-tree").setup()
+
+--CoC
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.updatetime = 300
+-- Highlight the symbol and its references on a CursorHold event(cursor is idle)
+vim.api.nvim_create_augroup("CocGroup", {})
+vim.api.nvim_create_autocmd("CursorHold", {
+    group = "CocGroup",
+    command = "silent call CocActionAsync('highlight')",
+    desc = "Highlight symbol under cursor on CursorHold"
+})

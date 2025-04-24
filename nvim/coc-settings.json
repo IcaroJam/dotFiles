@@ -49,10 +49,10 @@
 	"codeLens.enable": true,
 	"codeLens.separator": "▸",
 	"list.indicator": "❯",
+	"links.tooltip": true,
 	"coc.preferences.enableLinkedEditing": true,
 	"coc.preferences.enableMessageDialog": true,
 	"coc.preferences.formatOnType": true,
-	"links.tooltip": true,
 	
 	// clangd stuff:
 	"clangd.enabled": true,
@@ -60,6 +60,6 @@
 	"clangd.arguments": ["--clang-tidy", "--completion-style=detailed", "--fallback-style=google", "--header-insertion=never", "--suggest-missing-includes"],
 
 	// html stuff:
-  "html.autoClosingTags": true,
-  "svelte.enable-ts-plugin": true
+	"html.autoClosingTags": true,
+	"svelte.enable-ts-plugin": true
 }
