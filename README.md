@@ -1,5 +1,6 @@
-# My config files for the stuff I use!
-### Currently running on Linux Mint
+# My config files for the stuff I use
+### Comes with a nerdy rice attempt mixing stuff from a bunch of games. All with a nice coat of material teal paint
+#### Currently running on Linux Mint
 
 ## Plymouth
 Custom theme made from the silhouette of Mae from Night in the Woods. Go play it.
@@ -25,3 +26,6 @@ The gtk theme is still unfinished. Gtk theming is HARD.
 - Change the grouped window list applet spacing: `/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/appGroup.js` line 263.
 #### Mintupdate icons:
 - Customized to use the logo from Firewatch. Files in `.local/share/icons/hicolor`. I can't for the life of me figure out how to make system tray icons use the colorscheme though.
+
+## Lightdm GTK Greeter
+For this one it's just copying `lightdm-gtk-greeter.conf` into `/etc/lightdm/`. Don't forget to change the background image to something you actually have! Also, lightdm doesn't have access to you HOME, so the image you specify should be somewhere like `/usr/share/backgrounds/`.
