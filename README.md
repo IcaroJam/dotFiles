@@ -2,6 +2,7 @@
 ### Currently running on Linux Mint
 
 ## Plymouth
+Custom theme made from the silhouette of Mae from Night in the Woods. Go play it.
 #### Display a splashcreen during bootup and shutdown
 For this one you'll have to copy the theme into `/usr/share/plymouth/themes`. Then install it with:
 > sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/\[your_theme\]/\[your_theme_main.plymouth\] 100
@@ -12,6 +13,15 @@ Then set it as active with:
 And finally reload your intramfs:
 > sudo update-initramfs -u
 
+## Everforest
+#### A theme to go all around
+- A tweaked version of [Everforest-GTK-Theme](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme).
+- Custom everforest version of [Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme).
+- Custom everforest version of [Vimix-cursors](https://github.com/vinceliuice/Vimix-cursors.git).
+The gtk theme is still unfinished. Gtk theming is HARD.
+
 ## Cinnamon
 #### Smol tweaks:
 - Change the grouped window list applet spacing: `/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/appGroup.js` line 263.
+#### Mintupdate icons:
+- Customized to use the logo from Firewatch. Files in `.local/share/icons/hicolor`. I can't for the life of me figure out how to make system tray icons use the colorscheme though.
