@@ -2,7 +2,6 @@
 Name=Vimix-forest
 Comment=A simple and modern icon theme using everforest dark.
 Inherits=Papirus,Numix-Circle,Adwaita,hicolor
-Example=folder
 
 # KDE/Plasma Stuff
 DisplayDepth=32
