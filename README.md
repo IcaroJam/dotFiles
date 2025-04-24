@@ -6,13 +6,19 @@
 Custom theme made from the silhouette of Mae from Night in the Woods. Go play it.
 #### Display a splashcreen during bootup and shutdown
 For this one you'll have to copy the theme into `/usr/share/plymouth/themes`. Then install it with:
-> sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/\[your_theme\]/\[your_theme_main.plymouth\] 100
+```
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/\[your_theme\]/\[your_theme_main.plymouth\] 100
+```
 
 Then set it as active with:
-> sudo update-alternatives --config default.plymouth
+```
+sudo update-alternatives --config default.plymouth
+```
 
 And finally reload your intramfs:
-> sudo update-initramfs -u
+```
+sudo update-initramfs -u
+```
 
 ## Everforest
 #### A theme to go all around
