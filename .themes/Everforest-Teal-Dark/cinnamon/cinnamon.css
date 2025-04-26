@@ -2239,14 +2239,14 @@ StScrollBar StButton#hhandle:active {
 }
 
 .applet-box:checked, .applet-box:checked:hover {
-  color: #d3c6aa;
-  background-color: rgba(131, 192, 146, 0.25);
+  color: #83c092;
+  background-color: #2e383c;
 }
 
 .applet-box:highlight {
   background-image: none;
   border-image: none;
-  background-color: rgba(248, 85, 82, 0.5);
+  background-color: #4c3743;
 }
 
 .applet-label {
