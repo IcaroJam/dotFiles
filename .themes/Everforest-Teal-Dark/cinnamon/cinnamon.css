@@ -341,8 +341,9 @@ StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
   padding: 6px;
   border-radius: 12px;
-  background-color: #232a2e;
-  box-shadow: 0 0 12px rgba(131, 192, 146, 0.75);
+  border: 1px solid #374145;
+  background-color: #272e33;
+  box-shadow: 0 0 8px rgba(131, 192, 146, 0.5);
 }
 
 .menu .popup-menu-item,
@@ -522,8 +523,9 @@ StScrollBar StButton#hhandle:active {
   color: #d3c6aa;
   font-size: 1em;
   padding: 0px;
-  background-color: rgba(39, 46, 51, 1);
-  box-shadow: 0 0 12px rgba(131, 192, 146, 0.25);
+  background-color: #272e33;
+  border-top: 1px solid #374145;
+  box-shadow: 0 0 8px rgba(131, 192, 146, 0.5);
 }
 
 .panel-top .panel-button:hover,
@@ -2374,7 +2376,6 @@ StScrollBar StButton#hhandle:active {
   color: #d3c6aa;
   background-color: #2e383c; }
   .dialog .dialog-button:focus {
-    border: 1px solid #2e383c;
     color: #83c092;
     background-color: #374145;
     border: 1px solid #83c092; }
@@ -2388,8 +2389,9 @@ StScrollBar StButton#hhandle:active {
     color: #374145;
     background-color: #83c092; }
   .dialog .dialog-button:insensitive {
-    color: #272e33;
-    background-color: #495156; }
+    color: #374145;
+    background-color: #1e2326;
+    border: 1px solid #2e383c}
 
 .dialog .dialog-button:default {
   border: 1px solid #83c092;
@@ -2552,7 +2554,7 @@ StScrollBar StButton#hhandle:active {
   font-weight: bold;
   spacing: 16px;
   padding: 16px 24px;
-  box-shadow: 0 0 8px rgba(131, 192, 146, 0.75); }
+  box-shadow: 0 0 8px rgba(131, 192, 146, 0.5); }
   .media-keys-osd > * {
     spacing: 16px; }
   .media-keys-osd StIcon {
