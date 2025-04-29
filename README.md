@@ -1,5 +1,5 @@
 # My config files for the stuff I use
-Comes with a nerdy rice attempt mixing stuff from a bunch of games. All with a nice coat of material teal paint. 
+Comes with a nerdy rice attempt mixing stuff from a bunch of games. All with a nice coat of material teal paint.  
 Currently running on Linux Mint.
 
 ## Plymouth
@@ -25,6 +25,7 @@ sudo update-initramfs -u
 - GTK Theme: A (wip) mix of the teal variant of [Everforest-GTK-Theme](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme) and Linux Mint's Mint-Y-Dark.
 - Icons: Custom everforest version of [Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme).
 - Cursors: Custom everforest fork of vimix-cursors, [Vimix Forest Cursors](https://github.com/IcaroJam/Vimix-forest-cursors).
+
 The gtk theme is still unfinished. Gtk theming is HARD. And I'm going through the raw CSS files line by line because I'm a stupid masochist and I've spent way to much time on it already to start anew using SASS.
 
 ## Cinnamon
