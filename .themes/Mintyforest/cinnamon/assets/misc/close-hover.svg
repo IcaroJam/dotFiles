@@ -1,0 +1,10 @@
+<svg width="26" height="26" enable-background="new 0 0 16 16" version="1.0" viewBox="0 0 18.909 18.909" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="a" x="-.048" y="-.048" width="1.096" height="1.096" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".32"/>
+    </filter>
+  </defs>
+  <circle cx="9.454" cy="10.182" r="8" filter="url(#a)" opacity=".1"/>
+  <circle cx="9.454" cy="9.454" r="8" style="fill:#4c3743;"/>
+  <path d="M6.112 5.748a.363.363 0 0 0-.257.62L8.94 9.456 5.854 12.54a.364.364 0 0 0 .516.514L9.455 9.97l3.085 3.086a.363.363 0 1 0 .515-.515L9.969 9.455l3.086-3.086a.363.363 0 1 0-.515-.515L9.455 8.94 6.37 5.854a.37.37 0 0 0-.258-.106" style="fill:#e67e80;"/>
+</svg>

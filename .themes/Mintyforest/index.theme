@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mintyforest
+Comment=A fresh combination of cool material colors and subtle neon lights
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mintyforest
+MetacityTheme=Mintyforest
+IconTheme=Tela-forest
+CursorTheme=Vimix-forest-cursors
+ButtonLayout=:minimize,maximize,close

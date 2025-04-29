@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB" id="a" x="-.058" y="-.058" width="1.116" height="1.116">
+      <feGaussianBlur stdDeviation=".484"/>
+    </filter>
+  </defs>
+  <circle cx="12" cy="13" r="10" style="opacity:.5;fill:#83c092;fill-opacity:1;filter:url(#a)"/>
+  <circle cx="12" cy="12" r="10" style="fill:#374145;fill-opacity:1;stroke:#272e33;stroke-width:1.5"/>
+</svg>

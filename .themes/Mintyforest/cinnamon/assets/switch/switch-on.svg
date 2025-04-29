@@ -1,0 +1,10 @@
+<svg width="48" height="24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB" id="a" x="-.058" y="-.058" width="1.116" height="1.116">
+      <feGaussianBlur stdDeviation=".484"/>
+    </filter>
+  </defs>
+  <rect style="opacity:.5;fill:#83c092;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:url(#a)" x="2" y="3" width="44" height="20" rx="10" ry="10"/>
+  <rect x="2" y="2" width="44" height="20" rx="10" ry="10" style="fill:#83c092"/>
+  <circle cx="36" cy="12" r="8" style="paint-order:stroke fill markers;fill:#1a1b26;fill-opacity:1"/>
+</svg>
