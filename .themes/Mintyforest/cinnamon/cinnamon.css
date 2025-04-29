@@ -284,8 +284,8 @@ StScrollBar {
 
 .popup-separator-menu-item {
   -gradient-height: 1px;
-  -gradient-start: #414b50;
-  -gradient-end: #414b50;
+  -gradient-start: #495156;
+  -gradient-end: #495156;
   -margin-horizontal: 0;
   height: 1px; }
 
@@ -855,7 +855,7 @@ StScrollBar {
     spacing: 4px; }
   .switcher-list .separator {
     width: 1px;
-    background: #414b50; }
+    background: #495156; }
 
 .switcher-arrow {
   border-color: rgba(0, 0, 0, 0);
@@ -1186,7 +1186,7 @@ StScrollBar {
     width: 256px; }
   .grouped-window-list-thumbnail-menu .separator {
     width: 1px;
-    background: #414b50; }
+    background: #495156; }
 
 .sound-button {
   width: 24px;
