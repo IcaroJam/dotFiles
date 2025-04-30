@@ -1765,7 +1765,7 @@ StScrollBar {
   padding: 24px; }
 
 .media-keys-osd {
-  margin-bottom: 2em;
+  margin-bottom: 32px;
   border-radius: 8px;
   font-weight: bold;
   spacing: 16px;
