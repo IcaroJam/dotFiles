@@ -1168,6 +1168,7 @@ StScrollBar {
   border-radius: 8px;
   border: 1px solid #374145;
   box-shadow: 0 0 8px rgba(131, 192, 146, 0.5);
+  spacing: 4px;
   padding: 8px;
   margin: 8px; }
   .grouped-window-list-thumbnail-menu > StBoxLayout {
@@ -1178,7 +1179,7 @@ StScrollBar {
     spacing: 4px; }
     .grouped-window-list-thumbnail-menu .item-box:outlined {
 	  color: #83c092;
-      background-color: #2e383c; }
+      background-color: #272e33; }
     .grouped-window-list-thumbnail-menu .item-box:selected {
 	  color: #83c092;
       background-color: #2e383c; }
