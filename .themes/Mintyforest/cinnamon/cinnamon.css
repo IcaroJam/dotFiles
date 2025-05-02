@@ -760,7 +760,7 @@ StScrollBar {
 
 .calendar-not-today {
   color: #d3c6aa;
-  border-radius: 6px; }
+  border-radius: 4px; }
   .calendar-not-today:selected {
     font-weight: bold;
     background-color: #374145; }
