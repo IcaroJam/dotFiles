@@ -22,11 +22,9 @@ sudo update-initramfs -u
 
 ## Everforest
 #### A theme to go all around
-- GTK Theme: A (wip) mix of the teal variant of [Everforest-GTK-Theme](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme) and Linux Mint's Mint-Y-Dark.
-- Icons: Custom everforest version of [Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme).
+- GTK Theme: A (wip) mix of the teal variant of Everforest-GTK-Theme and Linux Mint's Mint-Y-Dark, [Mintyforest-GTK-Theme](https://github.com/IcaroJam/Mintyforest-GTK-Theme).
+- Icons: Custom everforest version of [Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme). No repo fo this one, it's manually included in the icons folder.
 - Cursors: Custom everforest fork of vimix-cursors, [Vimix Forest Cursors](https://github.com/IcaroJam/Vimix-forest-cursors).
-
-The gtk theme is still unfinished. Gtk theming is HARD. And I'm going through the raw CSS files line by line because I'm a stupid masochist and I've spent way to much time on it already to start anew using SASS.
 
 ## Cinnamon
 #### Smol tweaks:
