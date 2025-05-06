@@ -7,16 +7,12 @@ import = [
 startup_mode = "Maximized"
 opacity = 1
 
-padding.x = 10
-padding.y = 10
+padding.x = 8
+padding.y = 8
 
 decorations = "Full"
 decorations_theme_variant = "Dark"
 
 [font]
-normal.family = "Mononoki Nerd Font Mono"
-#bold.family = ""
-#italic.family = ""
-#bold_italic.family = ""
-
-#size = 15.0
+normal.family = "Mononoki Custom Mono"
+normal.style = "Regular"
