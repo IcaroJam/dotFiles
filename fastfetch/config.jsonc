@@ -7,11 +7,19 @@
     },
     "display": {
         "brightColor": true,
-        "separator": " >>   ",
-        "constants": [],
+        "separator": " >>  ",
         "key": {
-            "paddingLeft": 2
-        }
+            "paddingLeft": 3
+        },
+        "bar": {
+            "borderLeft": "[",
+            "borderRight": "]",
+            "charElapsed": "=",
+            "charTotal": "-",
+            "width": 24
+        },
+        "size": {"binaryPrefix": "jedec"},
+        "percent": {"type": 3}
     },
     "modules": [
         "break",
@@ -62,36 +70,42 @@
         },
         {
             "type": "icons",
-            "key": "Icn ",
+            "key": "Icns",
             "keyColor": "blue"
         },
         {
             "type": "cursor",
+            "format": "{1}",
             "key": "Curs",
             "keyColor": "blue"
         },
         {
             "type": "cpu",
+            "format": "{1} @ {7}",
             "key": "Cpu ",
             "keyColor": "green"
         },
         {
             "type": "gpu",
+            "format": "{1} {2} {4}",
             "key": "Gpu ",
             "keyColor": "green"
         },
         {
             "type": "disk",
+            "format": "{13} {3} {1} / {2}",
             "key": "Disk",
             "keyColor": "green"
         },
         {
             "type": "memory",
+            "format": "{4} {3} {1} / {2}",
             "key": "Mem ",
             "keyColor": "green"
         },
         {
             "type": "display",
+            "format": "{inch}\" {width}x{height} @ {refresh-rate} Hz",
             "key": "Disp",
             "keyColor": "green"
         },
@@ -102,9 +116,9 @@
         },
         {
             "type": "media",
+            "format": "{combined}",
             "key": "Plng",
-            "keyColor": "cyan",
-            "format": "{combined}"
+            "keyColor": "cyan"
         },
         "break",
         {
