@@ -1,0 +1,116 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": {
+            "top": 2
+        }
+    },
+    "display": {
+        "brightColor": true,
+        "separator": " >>   ",
+        "constants": [],
+        "key": {
+            "paddingLeft": 2
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "format": "{#36}{1>30} {#37}@ {#36}{2<30}"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "{#30}{#40}  {#31}{#41}  {#32}{#42}  {#33}{#43}  {#34}{#44}  {#35}{#45}  {#36}{#46}  {#37}{#47}  {#}{#37}   {#37}{#47}     {#}{#37}   {#37}{#47}  {#36}{#46}  {#35}{#45}  {#34}{#44}  {#33}{#43}  {#32}{#42}  {#31}{#41}  {#30}{#40}  {#}{#30}"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "Os  ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "Pkgs",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": "Term",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "Shll",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "de",
+            "key": "Desk",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "Wm  ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": "Gtk ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "icons",
+            "key": "Icn ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "cursor",
+            "key": "Curs",
+            "keyColor": "blue"
+        },
+        {
+            "type": "cpu",
+            "key": "Cpu ",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "Gpu ",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "Disk",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "Mem ",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "Disp",
+            "keyColor": "green"
+        },
+        {
+            "type": "player",
+            "key": "Plyr",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "media",
+            "key": "Plng",
+            "keyColor": "cyan",
+            "format": "{combined}"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "{#90}{#100}  {#91}{#101}  {#92}{#102}  {#93}{#103}  {#94}{#104}  {#95}{#105}  {#96}{#106}  {#97}{#107}  {#}{#97}   {#97}{#107}     {#}{#97}   {#97}{#107}  {#96}{#106}  {#95}{#105}  {#94}{#104}  {#93}{#103}  {#92}{#102}  {#91}{#101}  {#90}{#100}  {#}{#90}"
+        },
+        "break"
+    ]
+}
