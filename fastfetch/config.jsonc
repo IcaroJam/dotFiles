@@ -6,6 +6,9 @@
 			"right": 2,
 			"botton": 1,
 			"left": 2
+		},
+		"color": {
+			"1": "white"
 		}
     },
     "display": {
