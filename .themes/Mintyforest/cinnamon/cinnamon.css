@@ -1481,10 +1481,10 @@ StScrollBar {
   max-height: 128px; }
 
 .tile-preview {
-  background-color: #2e383c;
+  background-color: rgba(131, 192, 146, 0.25);
   border: 1px solid #83c092; }
   .tile-preview.snap {
-    background-color: #374145; }
+    background-color: rgba(131, 192, 146, 0.5); }
 
 .tile-hud {
   background-color: #2e383c;
