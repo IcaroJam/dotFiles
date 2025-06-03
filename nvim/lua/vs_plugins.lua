@@ -1,51 +1,16 @@
 require "paq" {
 	"savq/paq-nvim", -- Let Paq manage itself
 
-	"neovim/nvim-lspconfig",
-
 	"sainnhe/everforest",
 
-	"nvim-lualine/lualine.nvim",
-
-	"lukas-reineke/indent-blankline.nvim",
-
-	"nvim-tree/nvim-web-devicons",
-
 	"preservim/nerdcommenter",
-
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
 	"windwp/nvim-autopairs",
 
 	"kylechui/nvim-surround",
 
-	"nvim-tree/nvim-tree.lua",
-
-	-- Telescope block
-	"nvim-lua/plenary.nvim",
-	{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
-	{ "nvim-telescope/telescope.nvim", tag = "0.1.8" },
-
 	{ "neoclide/coc.nvim", branch = "release" },
 
-}
-
--- Lualine
-require("lualine").setup {
-	options = {
-		disabled_filetypes = {
-			"NvimTree",
-		},
-		component_separators = { left = "|", right = "|"},
-		section_separators = { left = "", right = ""},
-	},
-}
-
--- IndentBlankLine
-require("ibl").setup {
-	indent = {
-		tab_char = "▎",
-	},
 }
 
 -- NerdCommenter
@@ -58,17 +23,6 @@ require("ibl").setup {
 	vim.g.NERDToggleCheckAllLines = 1 -- Enable NERDCommenterToggle to check all selected lines is commented or not
 	vim.g.NERDAllowAnyVisualDelims = 0
 
--- Treesitter
-require'nvim-treesitter.configs'.setup {
-	highlight = {
-		enable = true,
-	},
-
-	indent = {
-		enable = true,
-	},
-}
-
 -- Autopairs
 require("nvim-autopairs").setup {
 	check_ts = true,
@@ -79,9 +33,6 @@ require("nvim-autopairs").setup {
 
 -- Surround
 require("nvim-surround").setup()
-
--- NerdTree
-require("nvim-tree").setup()
 
 --CoC
 	vim.opt.backup = false
@@ -95,7 +46,7 @@ require("nvim-tree").setup()
 		desc = "Highlight symbol under cursor on CursorHold"
 	})
 	-- Complete on enter
-	-- vim.keymap.set("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "<CR>"]], {expr = true})
+	vim.keymap.set("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "\<CR>"]], {expr = true})
 	-- Cycle through completion list with tab
 	vim.keymap.set("i", "<Tab>", [[coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"]], {expr = true})
 	vim.keymap.set("i", "<S-Tab>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"]], {expr = true})

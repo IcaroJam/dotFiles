@@ -1,5 +1,9 @@
 -- Load Plugins
-require("plugins")
+if vim.g.vscode then
+	require("vs_plugins")
+else
+	require("plugins")
+end
 
 -- General Options
 vim.opt.number = true
