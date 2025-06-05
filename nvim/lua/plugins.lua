@@ -95,7 +95,7 @@ require("nvim-tree").setup()
 		desc = "Highlight symbol under cursor on CursorHold"
 	})
 	-- Complete on enter
-	-- vim.keymap.set("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "<CR>"]], {expr = true})
+	vim.keymap.set("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], {expr = true})
 	-- Cycle through completion list with tab
 	vim.keymap.set("i", "<Tab>", [[coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"]], {expr = true})
 	vim.keymap.set("i", "<S-Tab>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"]], {expr = true})
