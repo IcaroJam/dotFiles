@@ -49,7 +49,7 @@ require("ibl").setup {
 }
 
 -- NerdCommenter
-	vim.g.NERDCreateDefaultMappings = 1 -- Create default mappings
+	vim.g.NERDCreateDefaultMappings = 0 -- Create default mappings
 	vim.g.NERDSpaceDelims = 1 -- Add spaces after comment delimiters by default
 	vim.g.NERDCompactSexyComs = 1 -- Use compact syntax for prettified multi-line comments
 	vim.g.NERDDefaultAlign = 'left' -- Align line-wise comment delimiters flush left instead of following code indentation
@@ -57,6 +57,8 @@ require("ibl").setup {
 	vim.g.NERDTrimTrailingWhitespace = 1 -- Enable trimming of trailing whitespace when uncommenting
 	vim.g.NERDToggleCheckAllLines = 1 -- Enable NERDCommenterToggle to check all selected lines is commented or not
 	vim.g.NERDAllowAnyVisualDelims = 0
+	vim.keymap.set("n", "<leader>c", "<Plug>NERDCommenterToggle")
+	vim.keymap.set("x", "<leader>c", "<Plug>NERDCommenterToggle")
 
 -- Treesitter
 require'nvim-treesitter.configs'.setup {
@@ -71,6 +73,7 @@ require'nvim-treesitter.configs'.setup {
 
 -- Autopairs
 require("nvim-autopairs").setup {
+	map_cr = false,
 	check_ts = true,
 	enable_afterquote = false,
 	enable_braket_in_quote = false,

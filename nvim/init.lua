@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 -- Load Plugins
 if vim.g.vscode then
 	require("vs_plugins")

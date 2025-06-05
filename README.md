@@ -67,7 +67,7 @@ The terminal setup includes:
         - type `gy`
         - implementation `gi`
         - references `gr`
-    - Cycle completion list with `Tab` and `Shift+Tab`
+        - Cycle completion list with `Tab` and `Shift+Tab`
     - NvimSurround:
         - Add surround with `ys{motion}{char}`
         - Delete surround with `ds{char}`
@@ -75,6 +75,7 @@ The terminal setup includes:
         - Act over HTML tags with `t`
         - Act over function tags with `f`
         - Opening chars will surround with spaces. E.g.: `ysiw(` results in `( example )` while `ysiw)` results in `(example)`
+    - NerdCommenter: Toggle comment with `LEADER+c`
 
 
 ## Ohmyzsh

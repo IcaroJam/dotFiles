@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- Control Movement and Editing
 vim.keymap.set("i", "<C-Left>", "<Esc>bi")
 vim.keymap.set("n", "<C-Left>", "b")
