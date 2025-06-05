@@ -61,7 +61,7 @@ The terminal setup includes:
     - Telescope find file by name with `LEADER+f`
     - Telescope find by content with `LEADER+g`
     - Open NerdTree help (while inside it) with `g?`
-    - NerdCommenter block comment in Visual mode with `LEADER+c+s` and `LEADER+c+u` to uncomment
+    - NerdCommenter: Toggle comment in normal and visual mode with `LEADER+c`
     - CoC go-to in Normal mode:
         - definition `gd`
         - type `gy`
@@ -75,7 +75,6 @@ The terminal setup includes:
         - Act over HTML tags with `t`
         - Act over function tags with `f`
         - Opening chars will surround with spaces. E.g.: `ysiw(` results in `( example )` while `ysiw)` results in `(example)`
-    - NerdCommenter: Toggle comment with `LEADER+c`
 
 
 ## Ohmyzsh
